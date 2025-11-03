@@ -20,7 +20,7 @@ pipeline {
             steps {
                 bat """
                 python -m venv "%VENV%"
-                call "%VENV%\Scripts\activate"
+                call "%VENV%\\Scripts\\activate"
                 python -m pip install --upgrade pip setuptools wheel
                 if exist requirements.txt (
                     pip install -r requirements.txt

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectConfig>
+    <model>
+        <name>ImageClassifierAI</name>
+        <version>1.0</version>
+        <framework>tensorflow</framework>
+    </model>
+
+    <training>
+        <epochs>10</epochs>
+        <batch_size>32</batch_size>
+        <learning_rate>0.001</learning_rate>
+    </training>
+
+    <data>
+        <train_data_path>data/train</train_data_path>
+        <test_data_path>data/test</test_data_path>
+    </data>
+
+    <output>
+        <model_save_path>output/model.h5</model_save_path>
+        <log_dir>logs</log_dir>
+    </output>
+</projectConfig>
